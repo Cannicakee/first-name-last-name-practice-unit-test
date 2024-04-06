@@ -43,18 +43,18 @@ function filterUserProfiles(users, filter) {
 
 // To test the example, comment out the code below and run the following command
 // in your terminal: node problems/05-filter-user-profiles.js
-// const facebookUsers = [
-//   { name: "John", age: "21", state: "Florida" },
-//   { name: "Mary", age: "57", state: "California" },
-//   { name: "Judy", age: "47", state: "Texas" },
-//   { name: "Mike", age: "32", state: "New York" }
-// ];
+const facebookUsers = [
+  { name: "John", age: "21", state: "Florida" },
+  { name: "Mary", age: "57", state: "California" },
+  { name: "Judy", age: "47", state: "Texas" },
+  { name: "Mike", age: "32", state: "New York" }
+];
 
-// const cb1 = (user) => user.age > 30;
-// console.log(filterUserProfiles(facebookUsers, cb1)); // ["Mary", "Judy", "Mike"]
+const cb1 = (user) => user.age > 30;
+console.log(filterUserProfiles(facebookUsers, cb1)); // ["Mary", "Judy", "Mike"]
 
-// const cb2 = (user) => user.state === "New York";
-// console.log(filterUserProfiles(facebookUsers, cb2)); // ["Mike"]
+const cb2 = (user) => user.state === "New York";
+console.log(filterUserProfiles(facebookUsers, cb2)); // ["Mike"]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

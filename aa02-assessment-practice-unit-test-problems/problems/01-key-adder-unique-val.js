@@ -14,12 +14,11 @@ console.log(cat); // { name: "Willie", color: "orange", toy: "yarn" }
 ***********************************************************************/
 
 function keyAdderUniqueVal(object, key, value) {
-	for(let keys in object) {
-		if ((key !== keys) && (object[keys] !== value)) {
-			Object.assign(object, {key: value});
-		}
-	}
-	return object;
+			let values = Object.values(object);
+			if(!values.includes(value)) {
+				object[key] = value;
+			}
+			return object;
 }
 
 let cat = { name: 'Willie', color: 'orange' };
