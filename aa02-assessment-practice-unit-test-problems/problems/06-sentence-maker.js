@@ -14,7 +14,7 @@ sentenceMaker('The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'd
 const sentenceMaker = (...string) => {
 	let newString = '';
 	string.forEach((el) => {
-		newString = newString + el + " ";
+		newString += el;
 	})
 	return newString + "!";
 }
