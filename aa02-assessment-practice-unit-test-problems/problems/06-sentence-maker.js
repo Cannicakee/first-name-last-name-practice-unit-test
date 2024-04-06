@@ -11,12 +11,8 @@ sentenceMaker('I', 'love', 'coding'); // 'I love coding!'
 sentenceMaker('The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'); // 'The quick brown fox jumps over the lazy dog!'
 ***********************************************************************/
 
-const sentenceMaker = (...string) => {
-	let newString = '';
-	string.forEach((el) => {
-		newString += el;
-	})
-	return newString + "!";
+const sentenceMaker = (...arguments) => {
+	return arguments.join(' ') + "!";
 }
 
 console.log(sentenceMaker('Hello', 'World')); // 'Hello World!'
